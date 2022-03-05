@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: linear-gradient(to right, #4361ee ,#4895ef,#4cc9f0);
+    width: 70%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.leftSide{
+    flex-basis: 18%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.image{
+    width: 150px;
+    height: 200px;
+    animation: botom 2s linear infinite;
+}
+@keyframes botom{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+
+}
+.image img{
+    width: 150px;
+}
+.wc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+}
+.btnCheck{
+    padding: .8rem 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 80%;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+.btnCheck:hover{
+    letter-spacing: 1px;
+}
+.rightSide{
+    flex-basis: 70%;
+    height: 80%;
+    background-color: white;
+    text-align: center;
+    border-radius:12% 0% 0% 12% / 50% 0% 0% 50%;
+    position: relative;
+
+}
+.title{
+    margin: 1.8rem 0 1rem 0;
+    
+}
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto ;
+}
+.formContainer input{
+    width: 40%;
+    height: 12%;
+    border: 1px solid grey;
+    border-radius:3px ;
+    padding-left: .4rem;
+}
+input[type='submit']{
+    right: 9rem;
+    bottom: 2.5rem;
+    position: absolute;
+    padding: 1rem 1rem;
+    border: none;
+    background-image: linear-gradient(to right, #4361ee ,#4895ef,#4cc9f0);
+    color: white;
+    font-size: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+    width: 15%;
+}
+.btnReg:hover{
+    letter-spacing: 2px;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple AJAX JSON</title>
+    <script>
+    function doAJAX () {
+      fetch("5b-ajax.php")
+      .then(result => result.json())
+      .then((data) => { console.log(data); });
+    }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="AJAX demo" onclick="doAJAX()"/>
+  </body>
+</html>
